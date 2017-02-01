@@ -103,6 +103,17 @@
           <div class="col-sm-6 text-right"><?php echo $results; ?></div>
         </div>
       </div>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+            <h3 class="panel-title">Выгрузка Прайс-листа</h3>
+        </div>
+		<div class="panel-body">
+		    <form action="/index.php?route=tool/export_import/download" method="post" enctype="multipart/form-data" id="export" class="form-horizontal">		
+	          <input type="hidden" name="export_type" value="p" checked="checked" />
+	          <input type="submit" value="Export" />
+          </form>
+		</div>
+	</div>
     </div>
   </div>
   <script type="text/javascript"><!--
